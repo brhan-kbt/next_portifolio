@@ -29,7 +29,7 @@ const CustomMobileLink=({href,title,className='',toggle})=>{
     return(
         <button href={href}  className={`${className} relative group text-light dark:text-dark my-2`} onClick={handleClick}>
             {title}
-            <span className={`h-[1px] inline-block  bg-dark absolute left-0 -bottom-0.5
+            <span className={`h-[1px] inline-block absolute left-0 -bottom-0.5
             bg-light dark:bg-dark
             group-hover:w-full translate-[width] ease duration-300 ${router.asPath===href?'w-full':'w-0'}
             dark:bg-light`}>
