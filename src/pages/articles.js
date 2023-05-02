@@ -4,12 +4,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useRef } from 'react'
-import article1 from '../../public/images/articles/pagination component in reactjs.jpg'
-import article2 from '../../public/images/articles/create loading screen in react js.jpg'
-import article3 from '../../public/images/articles/create modal component in react using react portals.png'
-import article4 from '../../public/images/articles/form validation in reactjs using custom react hook.png'
-import article5 from '../../public/images/articles/smooth scrolling in reactjs.png'
-import article6 from '../../public/images/articles/todo list app built using react redux and framer motion.png'
+import pagination from '../../public/images/articles/pagination component in reactjs.jpg'
+import modal from '../../public/images/articles/create modal component in react using react portals.png'
+import validation from '../../public/images/articles/form validation in reactjs using custom react hook.png'
+import scrolling from '../../public/images/articles/smooth scrolling in reactjs.png'
+import todo from '../../public/images/articles/todo list app built using react redux and framer motion.png'
+import deploynext from '../../public/images/articles/deploy.png'
+import redux from '../../public/images/articles/What is Redux with easy explanation.png'
+import hoc from '../../public/images/articles/What is higher order component in React.jpg'
 import { motion, useMotionValue } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -95,8 +97,8 @@ const articles = () => {
   return (
     <>
      <Head>
-        <title>Birhanu | Articles Page</title>
-        <meta name='description' content='any description'/>
+        <title>Articles | Birhanu Kabito</title>
+        <meta name='description' content='By Birhanu Kabito'/>
     </Head>
     <TransitionEffect/>
     <main className='dark:text-light w-full flex flex-col items-center justify-center overflow-hidden'>
@@ -108,49 +110,59 @@ const articles = () => {
                         summary='Learn how to build a custom pagination component in ReactJS from scratch. 
                             Follow this step-by-step guide to integrate Pagination component in your ReactJS project.'
                         time='9 min read'
-                        link='/'
-                        img={article1}
+                        link='https://www.freecodecamp.org/news/build-a-custom-pagination-component-in-react/'
+                        img={pagination}
                     />
                     <FeaturedArticle
-                            title='Build A Custom Pagination Component In Reactjs From Scratch'
-                            summary='Learn how to build a custom pagination component in ReactJS from scratch. 
-                                Follow this step-by-step guide to integrate Pagination component in your ReactJS project.'
-                            time='9 min read'
-                            link='/'
-                            img={article2}
+                            title='How to Deploy Next.js Sites to Netlify'
+                            summary='Netlify provides a powerful CLI that allows you to interact with your account. 
+                            This means you can deploy a Next.js site to Netlify without ever leaving the command line! '
+                            time='5 min read'
+                            link=''
+                            img={deploynext}
                         />
             </ul>
             <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
             <ul>
                 <Article
                 title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-                img={article3}
+                img={validation}
                 date='April 17, 2023'
-                link='/'
+                link='https://www.bing.com/search?q=Form+Validation+In+Reactjs%3A+Build+A+Reusable+Custom+Hook+For+Inputs+And+Error+Handling&cvid=5ca9c96c1dc14613990ae668cce8ec1b&aqs=edge..69i57.299j0j4&FORM=ANAB01&PC=U531'
                 />
                  <Article
-                title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-                img={article4}
+                title='Silky Smooth Scrolling In Reactjs: A Step-By-Step Guide For React Developers       '
+                img={scrolling}
                 date='April 17, 2023'
-                link='/'
+                link='https://www.bing.com/search?q=Silky+Smooth+Scrolling+In+Reactjs%3A+A+Step-By-Step+Guide+For+React+Developers&cvid=8182484b39f74ab69f5e1939f2446b18&aqs=edge..69i57.371j0j4&FORM=ANAB01&PC=U531'
                 />
                  <Article
-                title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-                img={article5}
+                title='Creating An Efficient Modal Component In React Using Hooks And Portals
+                '
+                img={modal}
                 date='April 17, 2023'
-                link='/'
+                link='https://wecodetheweb.com/2019/03/02/easy-modals-with-react-hooks/#:~:text=We%20used%20hooks%20and%20render%20props%20to%20create,anywhere%2C%20but%20is%20positioned%20consistently%20on%20the%20page.'
                 />
                  <Article
-                title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-                img={article6}
+                title='Build A Fabulous Todo List App With React, Redux And Framer-Motion
+                '
+                img={todo}
                 date='April 17, 2023'
-                link='/'
+                link='https://dev.to/shaifarfan08/a-complete-react-todo-app-using-react-redux-framer-motion-2hk0'
                 />
                  <Article
-                title='Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'
-                img={article3}
+                title='Redux Simplified: A Beginners Guide For Web Developers
+                '
+                img={redux}
                 date='April 17, 2023'
-                link='/'
+                link='https://redux.js.org/tutorials/fundamentals/part-1-overview'
+                />
+                  <Article
+                title='What Is Higher Order Component (Hoc) In React?
+                '
+                img={hoc}
+                date='April 17, 2023'
+                link='https://medium.com/geekculture/understanding-react-higher-order-component-hoc-8e7a96820205'
                 />
             </ul>
         </Layout>

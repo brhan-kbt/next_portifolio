@@ -43,35 +43,24 @@ const Education = () => {
             bg-dark origin-top dark:bg-light'/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details
-                    type='Bachelor Of Science In Computer Science'
-                    time='2016-2020' place=' Massachusetts Institute Of Technology (MIT)'
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
+                    type='Bachelor Of Science In Information System'
+                    time='2019-2022' place=' Addis Ababa Univeristy (AAU)'
+                    info="Relevant courses included Data Structures and Algorithms, Website development, SDLC,  and Artificial 
                     Intelligence."
                 />
+                <Details
+                    type='Certificates related to Software Development'
+                    time='2016-2020' place=' Coursera, Udemy, SimplyLearn'
+                    info="Relevant courses included Data Structures and Algorithms, Software developmen, and UI/UX"
+                />
+               
+{/*                
                 <Details
                     type='Bachelor Of Science In Computer Science'
                     time='2016-2020' place=' Massachusetts Institute Of Technology (MIT)'
                     info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
                     Intelligence."
-                />
-                <Details
-                    type='Bachelor Of Science In Computer Science'
-                    time='2016-2020' place=' Massachusetts Institute Of Technology (MIT)'
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence."
-                />
-                <Details
-                    type='Bachelor Of Science In Computer Science'
-                    time='2016-2020' place=' Massachusetts Institute Of Technology (MIT)'
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence."
-                />
-                <Details
-                    type='Bachelor Of Science In Computer Science'
-                    time='2016-2020' place=' Massachusetts Institute Of Technology (MIT)'
-                    info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-                    Intelligence."
-                />
+                /> */}
             </ul>
         </div>
 

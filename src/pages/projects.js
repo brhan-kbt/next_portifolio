@@ -5,7 +5,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import yes from '../../public/images/projects/yes.png'
+import eonline from '../../public/images/projects/eonline.png'
+import eicad from '../../public/images/projects/eicad.png'
+import eyooad from '../../public/images/projects/eyooad.png'
+import eyooweb from '../../public/images/projects/eyoo3.png'
+import gadaa from '../../public/images/projects/gadaa.png'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -86,73 +91,79 @@ const projects = () => {
   return (
     <>
      <Head>
-        <title>Birhanu | Projects Page</title>
-        <meta name='description' content='any description'/>
+        <title>Projects | Birhanu Kabito</title>
+        <meta name='description' content='By Birhanu Kabito'/>
     </Head>
-    <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
+    <TransitionEffect/>
+
+    <main className='w-full flex flex-col items-center justify-center dark:text-light'>
         <Layout className='pt-16'>
             <AnimatedText text='Imagination Trumps Knowledge!' className='mb-16 lg:!text-6xl sm:!text-5xl sm:mb-8 xs:!text-3xl xs:!text-light sm:mb-8!'/>
 
             <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                 <div className='col-span-12'>
                    <FeaturedProject
-                   title='Crypto Screener Application'
-                    link='/'
+                    link='https://www.yes.et'
+                    title='Job Portal Platform'
                     summary="
-                    A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
+                    Developed using WordPress, Superio theme, Bootstrap, Elementor, social login, and other technologies provides a
+                     feature-rich platform for job seekers and employers. It allows users to search for
+                      job vacancies, create job profiles, and apply for jobs. Additionally, it includes social 
+                      login features for easy access, and its responsive design ensures that users can access the portal from any device"
                     github='/'
                     type='Featured Project'
-                    img={project1}
+                    img={yes}
                    
                    />
                 </div>
                 <div className='col-span-6 sm:col-span-12'>
                 <Project
-                   title='Crypto Screener Application'
+                   title='Eyoo fun Website'
                    summary="
                     A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                     It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                     local currency."
-                    link='/'
+                    link='https://eyoofun.netlify.app/'
                     github='/'
                     type='Featured Project'
-                    img={project1}
+                    img={eyooweb}
                    
                    />                
                 </div>
                 <div className='col-span-6 sm:col-span-12'>
                     <Project
-                    title='Crypto Screener Application'
+                    title='Gadaa News ~ Blog Website'
                     summary="
                         A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                         It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
                         local currency."
-                        link='/'
+                        link='www.gadanews.com'
                         github='/'
                         type='Featured Project'
-                        img={project1}
+                        img={gadaa}
                     
                     />    
                 </div>
                 <div className='col-span-12'>
                     <FeaturedProject
-                    title='Crypto Screener Application'
-                        link='/'
-                        summary="
-                    A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                    It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                    local currency."
+                    title='EIC Call Center Directory Listing Website'
+                    link='https://www.eagleinformationcenter.com'
+                    summary="
+                    The EIC Directory Listing Website is a robust web 
+                    application developed using 
+                    Laravel and React. This cutting-edge platform
+                     provides an extensive directory of businesses 
+                     and services in Ethiopia, making it easy for users 
+                     to find what they need quickly and efficiently."
                         github='/'
                         type='Featured Project'
-                        img={project1}
+                        img={eonline}
                     
                     />                
                 </div>
                 <div className='col-span-6 sm:col-span-12'>
                     <Project
-                    title='Crypto Screener Application'
+                    title='EIC Call Center Application'
                     summary="
                         A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                         It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
@@ -160,13 +171,13 @@ const projects = () => {
                         link='/'
                         github='/'
                         type='Featured Project'
-                        img={project1}
+                        img={eicad}
                     
                     />    
                 </div>
                 <div className='col-span-6 sm:col-span-12'>
                     <Project
-                    title='Crypto Screener Application'
+                    title='Eyoo Admin Dashboard'
                     summary="
                         A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
                         It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
@@ -174,7 +185,7 @@ const projects = () => {
                         link='/'
                         github='/'
                         type='Featured Project'
-                        img={project1}
+                        img={eyooad}
                     
                     />    
                 </div>

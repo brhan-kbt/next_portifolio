@@ -45,45 +45,33 @@ const Experience = () => {
             '/>
             <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                 <Details
-                position='Software Engineer' company='Google'
-                companyLink='www.google.com'
-                time='2022-Present' address='Mountain View, CA'
-                work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."            
+                position='Software Developer' company='YES'
+                companyLink='www.yes.et'
+                time='2022-Present' address='Megenagna, Bethelhem Plazza~301'
+                work="Working in a team responsible for developing innovative solutions for our clients. 
+                My work involves building new features, improving existing functionalities, and ensuring 
+                the overall performance and scalability of our software."            
                 />
                 <Details
-                position='Software Engineer' company='Google'
-                companyLink='www.google.com'
-                time='2022-Present' address='Mountain View, CA'
-                work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."            
+                position='Front End Developer' company='MKS'
+                companyLink='#'
+                time='2022' address='Bole, Adika bldg'
+                work="Developed and maintained high-quality user interfaces using Angular framework. 
+                I collaborated with cross-functional teams to ensure the performance and accessibility 
+                of web applications while staying up-to-date with the latest front-end development trends
+                 and techniques to improve the quality and efficiency of my work."            
                 />
                 <Details
-                position='Software Engineer' company='Google'
-                companyLink='www.google.com'
-                time='2022-Present' address='Mountain View, CA'
-                work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."            
+                position='Freelancer' company='Freelance Ethiopia'
+                companyLink='#'
+                time='2022-Present' address='Home'
+                work="I provide custom software solutions to clients in various industries. 
+                I collaborate with clients to understand their requirements, design and develop 
+                software applications, and ensure their performance by testing and deploying them. 
+                Using cutting-edge technologies and methodologies, I build scalable and robust software 
+                solutions that meet business needs."            
                 />
-                <Details
-                position='Software Engineer' company='Google'
-                companyLink='www.google.com'
-                time='2022-Present' address='Mountain View, CA'
-                work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."            
-                />
-                <Details
-                position='Software Engineer' company='Google'
-                companyLink='www.google.com'
-                time='2022-Present' address='Mountain View, CA'
-                work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."            
-                />
+               
             </ul>
         </div>
 

@@ -7,7 +7,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-import profilePic from '../../public/images/profile/developer-pic-2.jpg'
+import profilePic from '../../public/images/profile/1P1A9450.JPG'
 import TransitionEffect from '@/components/TransitionEffect'
 
 
@@ -40,29 +40,31 @@ const about = () => {
   return (
     <>
     <Head>
-        <title>Birhanu | About Page</title>
-        <meta name='description' content='any description'/>
+        <title>About | Birhanu Kabito</title>
+        <meta name='description' content='By Birhanu Kabito'/>
     </Head>
     <TransitionEffect/>
     <main className='flex w-full flex-col items-center justify-center dark:text-light overflow-x-hidden'>
         <Layout className='pt-16'>
             <AnimatedText text='Passion Fuels Purpose!' className='mb-16 !text-8xl lg:!text-6xl sm:5xl xs:!text-2xl sm:mb-8'/>
-            <div className='grid w-full grid-cols-8 gap-10 sm:gap-6'>
+            <div className='grid w-full grid-cols-8 gap-6 sm:gap-6'>
                 <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 xs:justify-center'>
                     <h2 className='mb-4 text-lg font-bold uppercase dark:text-light/75 text-dark/75'>Biography</h2>
-                    <p className='font-medium'>
-                        Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
-                        and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
-                        new and innovative ways to bring my clients' visions to life.
+                    <p className='font-sm text-justify'>
+                    Hi, I'm <span className='border-b-2  border-red-500 offset-2 hover:bg-red-500 transform origin-bottom transition duration-200 hover:p-1 hover:font-semibold hover:cursor-pointer'>Birhanu Kabito</span>
+
+                    , a skilled software developer with experience in a variety of programming
+                     languages and frameworks. My technical expertise includes C++, Java, C#, HTML, CSS, JavaScript,
+                      PHP, Laravel, SQL server, MYSQL, Bootstrap, React, Angular,Nextjs, Nodejs and WordPress. 
+                      Additionally, I'm proficient in design using Figma, enabling me to deliver visually 
+                      appealing web solutions that engage users.
                     </p>
-                    <p className='font-medium' my-4>
-                     I believe that design is about more than just making things look pretty – it's about solving problems and 
-                        creating intuitive, enjoyable experiences for users. 
-                    </p>
-                    <p className='font-medium'>
-                        Whether I'm working on a website, mobile app, or 
-                        other digital product, I bring my commitment to design excellence and user-centered thinking to 
-                        every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                   <br/>
+                    <p className='font-sm text-justify'>
+                        My passion for web development drives me to stay up-to-date with the latest advancements 
+                        in the field, ensuring that I provide my clients with the most innovative solutions possible. 
+                        With my strong work ethic, keen eye for detail, and client-focused approach, I'm confident that
+                         I can excel as a web developer and contribute my skills and experience to any organization.
                     </p>
 
                 </div>
@@ -80,20 +82,20 @@ const about = () => {
                 <div className='col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                     <div className='flex flex-col items-end justify-center xl:items-center'>
                         <span className='inline-block text-7xl font-bold md:text-5xl sm:text-4xl xs:text-3xl'>
-                        <AnimatedNumbers value={30}/>+
+                        <AnimatedNumbers value={5}/>+
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Satisfied Clients</h2>
                     </div>
                     <div className='flex flex-col items-end justify-center  xl:items-center'>
                         <span className='inline-block text-7xl font-bold md:text-5xl sm:text-4xl xs:text-3xl'>
-                        <AnimatedNumbers value={50}/>+
+                        <AnimatedNumbers value={5}/>+
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Projects Completed</h2>
                     </div>
                     
                     <div className='flex flex-col items-end justify-center  xl:items-center'>
                         <span className='inline-block text-7xl font-bold md:text-5xl sm:text-4xl xs:text-3xl'>
-                        <AnimatedNumbers value={10}/>+
+                        <AnimatedNumbers value={1}/>+
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Year of Expeirence</h2>
                     </div>

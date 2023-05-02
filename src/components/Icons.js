@@ -463,4 +463,23 @@ const LinkArrow = ({ className, ...rest }) => (
     />
   </svg>
 );
-export {SunIcon,MoonIcon,CircularText,LinkArrow,GithubIcon,TwitterIcon,LinkedInIcon,PinterestIcon,DribbbleIcon}
+
+const TelegramIcon = ({className,...rest}) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1.23em"
+    height="1em"
+    viewBox="0 0 512 512"
+    className={`w-full h-auto ${className}`}
+    {...rest}
+  >
+    <path fill="rgba(255, 255, 255, 0)" d="M0 0h512v512H0z" />
+    <path
+      fill="#0088cc"
+      d="M437.248 74.752a22.661 22.661 0 0 0-22.558-3.029l-363.52 175.36c-13.834 6.669-19.154 22.476-11.474 35.728l40.96 64.768c7.681 12.252 23.488 16.557 37.322 9.888l105.407-53.504a24.004 24.004 0 0 1 27.046 3.413l56.32 48.896c11.342 9.856 28.417 7.701 37.273-3.64l87.04-112.128c8.856-11.342 6.701-28.417-3.64-37.273zM245.76 340.992c-5.304 5.296-13.882 5.296-19.186 0l-63.504-63.504-20.352 20.352c-5.304 5.296-13.882 5.296-19.186 0l-11.904-11.904c-5.296-5.304-5.296-13.882 0-19.186l50.176-50.176c5.304-5.296 13.882-5.296 19.186 0l20.352 20.352 63.504 63.504c5.296 5.304 5.296 13.882 0 19.186l-11.904 11.904z"
+    />
+  </svg>
+);
+
+
+export {SunIcon,MoonIcon,CircularText,LinkArrow,GithubIcon,TelegramIcon,TwitterIcon,LinkedInIcon,PinterestIcon,DribbbleIcon}

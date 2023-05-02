@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
-import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from './Icons'
+import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TelegramIcon, TwitterIcon } from './Icons'
 import Logo from './Logo'
 import {motion} from  'framer-motion'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
@@ -58,10 +58,10 @@ const Navbar = () => {
     z-10 lg:px-16 md:px-12 sm:px-8
     '
     >
-        <button onClick={handleClick} className='flex-col hidden lg:flex justify-center items-center'>
-            <span className={`bg-dark dark:bg-light block transition-all duration-3000 ease-out h-0.5 w-6 rounded-sm -translate-y-0.5 ${isOpen?'rotate-45 translate-y-1':'-translate-y-0.5'}`}></span>
+        <button onClick={handleClick} className='flex-col fixed hidden lg:flex justify-center items-center'>
+            <span className={`bg-dark dark:bg-light block transition-all duration-3000 ease-out h-0.5 w-6 rounded-sm ${isOpen?'rotate-45 translate-y-1':'-translate-y-0.5'}`}></span>
             <span className={`bg-dark dark:bg-light block transition-all duration-3000 ease-out h-0.5 w-4 rounded-sm my-0.5 ${isOpen?'opacity-0':'opacity-100'}`}></span>
-            <span className={`bg-dark dark:bg-light block transition-all duration-3000 ease-out h-0.5 w-6 rounded-sm translate-y-0.5 ${isOpen?'-rotate-45 -translate-y-1':'translate-y-0.5'}`}></span>
+            <span className={`bg-dark dark:bg-light block transition-all duration-3000 ease-out h-0.5 w-6 rounded-sm  ${isOpen?'-rotate-45 -translate-y-1':'translate-y-0.5'}`}></span>
         </button>
         
        <div className='w-full flex justify-between items-center lg:hidden'>
@@ -78,33 +78,33 @@ const Navbar = () => {
             whileHover={{  y:-2   }}
             whileTap={{scale:0.9}}
             className='w-6 mx-3 sm:mx-1'
-            href='https://twitter.com' target={"_blank"}>
+            href='https://twitter.com/Bkebito' target={"_blank"}>
                 <TwitterIcon/>
                 </motion.a> 
                 <motion.a 
                 whileHover={{  y:-2   }}
                 whileTap={{scale:0.9}}
-                className='w-6 mx-3' href='https://twitter.com' target={"_blank"}>
+                className='w-6 mx-3' href='https://github.com/brhan-kbt' target={"_blank"}>
                 <GithubIcon/>
                 </motion.a>
                 <motion.a 
                 whileHover={{  y:-2   }}
                 whileTap={{scale:0.9}}
-                className='w-6 mx-3' href='https://twitter.com' target={"_blank"}>
+                className='w-6 mx-3' href='https://www.linkedin.com/in/berhankebito' target={"_blank"}>
                     <LinkedInIcon/>
                     </motion.a>
-                <motion.a 
+                {/* <motion.a 
                 whileHover={{  y:-2   }}
                 whileTap={{scale:0.9}}
                 className='w-6 mx-3 bg-light rounded-full' href='https://twitter.com' target={"_blank"}>
-                    <PinterestIcon/>
+                    <TelegramIcon/>
                 </motion.a>
                 <motion.a 
                 whileHover={{  y:-2   }}
                 whileTap={{scale:0.9}}
                 className='w-6 ml-3' href='https://twitter.com' target={"_blank"}>
                     <DribbbleIcon/>
-                </motion.a>
+                </motion.a> */}
 
                 <button
                 onClick={()=>setMode(mode==='light'?'dark':'light')}
@@ -139,22 +139,22 @@ const Navbar = () => {
                 whileHover={{  y:-2   }}
                 whileTap={{scale:0.9}}
                 className='w-6 mx-3 sm:mx-1'
-                href='https://twitter.com' target={"_blank"}>
+                href='https://twitter.com/Bkebito' target={"_blank"}>
                     <TwitterIcon/>
                     </motion.a> 
                     <motion.a 
                     whileHover={{  y:-2   }}
                     whileTap={{scale:0.9}}
-                    className='w-6 mx-3 sm:mx-1 bg-light dark:bg-dark rounded-full' href='https://twitter.com' target={"_blank"}>
+                    className='w-6 mx-3 sm:mx-1 bg-light dark:bg-dark rounded-full' href='https://github.com/brhan-kbt' target={"_blank"}>
                     <GithubIcon/>
                     </motion.a>
                     <motion.a 
                     whileHover={{  y:-2   }}
                     whileTap={{scale:0.9}}
-                    className='w-6 mx-3 sm:mx-1 ' href='https://twitter.com' target={"_blank"}>
+                    className='w-6 mx-3 sm:mx-1 ' href='https://www.linkedin.com/in/berhankebito/' target={"_blank"}>
                         <LinkedInIcon/>
                         </motion.a>
-                    <motion.a 
+                    {/* <motion.a 
                     whileHover={{  y:-2   }}
                     whileTap={{scale:0.9}}
                     className='w-6 mx-3 sm:mx-1 bg-light rounded-full' href='https://twitter.com' target={"_blank"}>
@@ -165,7 +165,7 @@ const Navbar = () => {
                     whileTap={{scale:0.9}}
                     className='w-6 ml-3 sm:ml-1' href='https://twitter.com' target={"_blank"}>
                         <DribbbleIcon/>
-                    </motion.a>
+                    </motion.a> */}
     
                     <button
                     onClick={()=>setMode(mode==='light'?'dark':'light')}
