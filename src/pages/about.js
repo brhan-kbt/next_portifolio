@@ -7,7 +7,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-import profilePic from '../../public/images/profile/profile-pic.jpg'
+import profilePic from '../../public/images/profile/profile-pic.png'
 import TransitionEffect from '@/components/TransitionEffect'
 
 
