@@ -6,7 +6,7 @@ import TransitionEffect from '@/components/TransitionEffect';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
-import profilePic from '../../public/images/bg.png';
+import profilePic from '../../public/images/profile/profile.png';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 export default function Home() {
