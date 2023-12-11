@@ -21,9 +21,9 @@ const AnimatedNumbers=({value})=>{
     useEffect(() => {
         if (isInView) {
             motionValue.set(value)
-        }     
+        }
     }, [isInView,value,motionValue])
-    
+
 
     useEffect(()=>{
         springValue.on('change',(latest)=>{
@@ -32,7 +32,7 @@ const AnimatedNumbers=({value})=>{
             }
         })
     },[springValue,value])
-   
+
     return <span ref={ref}></span>
 }
 
@@ -55,14 +55,14 @@ const about = () => {
 
                     , a skilled software developer with experience in a variety of programming
                      languages and frameworks. My technical expertise includes C++, Java, C#, HTML, CSS, JavaScript,
-                      PHP, Laravel, SQL server, MYSQL, Bootstrap, React, Angular,Nextjs, Nodejs and WordPress. 
-                      Additionally, I'm proficient in design using Figma, enabling me to deliver visually 
+                      PHP, Laravel, SQL server, MYSQL, Bootstrap, React, Angular,Nextjs, Nodejs and WordPress.
+                      Additionally, I'm proficient in design using Figma, enabling me to deliver visually
                       appealing web solutions that engage users.
                     </p>
                    <br/>
                     <p className='font-sm text-justify'>
-                        My passion for web development drives me to stay up-to-date with the latest advancements 
-                        in the field, ensuring that I provide my clients with the most innovative solutions possible. 
+                        My passion for web development drives me to stay up-to-date with the latest advancements
+                        in the field, ensuring that I provide my clients with the most innovative solutions possible.
                         With my strong work ethic, keen eye for detail, and client-focused approach, I'm confident that
                          I can excel as a web developer and contribute my skills and experience to any organization.
                     </p>
@@ -74,7 +74,7 @@ const about = () => {
                 bg-light dark:bg-dark dark:border-light p-8'>
                     <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light'/>
                     <Image src={profilePic} alt='BIRHANU KABITO' className='w-full h-auto rounded-2xl'
-                     priority 
+                     priority
                      sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw,33vw'
                     />
                 </div>
@@ -88,11 +88,11 @@ const about = () => {
                     </div>
                     <div className='flex flex-col items-end justify-center  xl:items-center'>
                         <span className='inline-block text-7xl font-bold md:text-5xl sm:text-4xl xs:text-3xl'>
-                        <AnimatedNumbers value={5}/>+
+                        <AnimatedNumbers value={9}/>+
                         </span>
                         <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Projects Completed</h2>
                     </div>
-                    
+
                     <div className='flex flex-col items-end justify-center  xl:items-center'>
                         <span className='inline-block text-7xl font-bold md:text-5xl sm:text-4xl xs:text-3xl'>
                         <AnimatedNumbers value={1}/>+
