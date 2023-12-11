@@ -6,7 +6,7 @@ import TransitionEffect from '@/components/TransitionEffect';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
-import profilePic from '../../public/images/profile/developer-pic-1.png';
+import profilePic from '../../public/images/bg.png';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 export default function Home() {
@@ -24,19 +24,19 @@ export default function Home() {
           <div className='flex items-center justify-between w-full lg:flex-col'>
             <div className='w-1/2 md:w-full'>
               <Image src={profilePic} alt='BIRHANU KABITO' className='w-full h-auto  md:inline-block md:w-full'
-              priority 
+              priority
               sizes='(max-width:768px) 100vw, (max-width:1200px) 50vw,50vw'
               />
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText text='Turning Vision Into Reality With Code And Design.' className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6x md:!text-4xl sm:!text-3xl xs:!text-xl'/>
-              <p className='my-4 text-base font-medium md:text-sm sm:text-xs'> 
-                As a software developer, I am dedicated to turning ideas into innovative web applications. 
+              <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
+                As a software developer, I am dedicated to turning ideas into innovative web applications.
                 Explore my latest projects and articles, showcasing my expertise in software development.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link 
-                className='flex items-center bg-dark text-light p-2.5 px-6 
+                <Link
+                className='flex items-center bg-dark text-light p-2.5 px-6
                 rounded-lg text-lg font-semibold border-2 border-solid border-transparent
                 hover:bg-light hover:text-dark hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
@@ -56,7 +56,7 @@ export default function Home() {
           <Image src={lightBulb} alt='BIRHANU KABITO' className='w-full h-auto lg:h-24'/>
         </div>
       </main>
-   
+
     </>
   )
 }
